@@ -1,0 +1,3 @@
+C:/Users/Badir/Documents/projects/visitor_pattern_sample/cmake-build-debug/CMakeFiles/visitor_pattern_sample.dir
+C:/Users/Badir/Documents/projects/visitor_pattern_sample/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Badir/Documents/projects/visitor_pattern_sample/cmake-build-debug/CMakeFiles/rebuild_cache.dir
