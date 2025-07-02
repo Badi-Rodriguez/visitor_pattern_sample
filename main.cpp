@@ -158,16 +158,11 @@ int main() {
 
         // Calculate areas and export to XML
         std::cout << "Calculating areas and exporting shapes..." << std::endl;
-        circle.accept(operationsVisitor);
-        rectangle.accept(operationsVisitor);
-        triangle.accept(operationsVisitor);
         compound.accept(operationsVisitor);
 
         // Export XML
         std::cout << "\nExporting shapes to XML..." << std::endl;
-        operationsVisitor.exportXML(circle);
-        operationsVisitor.exportXML(rectangle);
-        operationsVisitor.exportXML(triangle);
+        operationsVisitor.exportXML(compoundShape);
 
     } catch (const std::invalid_argument& e) {
         std::cerr << "Error: " << e.what() << std::endl;
