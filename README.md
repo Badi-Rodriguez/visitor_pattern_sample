@@ -23,7 +23,7 @@ This is particularly useful in scenarios involving **polymorphism**, where diffe
 ## How is the Visitor Pattern Implemented Here?
 This project demonstrates the Visitor pattern using a simple geometry example in C++. The code is modularized for clarity and maintainability.
 
-### Key Components
+### Key Components (07/05/2025)
 - **Shapes:**
   - `Circle`, `Rectangle`, `Triangle`, and `CompoundShape` (a composite of shapes).
   - All shapes inherit from a common abstract base class.
@@ -44,8 +44,8 @@ This project demonstrates the Visitor pattern using a simple geometry example in
 - All modularized code is in the `improved version` directory.
 - The main directory contains a placeholder `main.cpp` that points users to the improved version.
 
-## Summary
-This project is a clear, modern C++ example of the Visitor pattern, showing how to:
+## Summary (07/08/2025)
+This was my best attempt at the recreeation of a simple, modern C++ example of the Visitor pattern, showing how to:
 - Separate operations from data structures
 - Add new operations easily
 - Keep code organized and maintainable
@@ -56,7 +56,7 @@ That would be it from me, thank you for reading, and I hope this implementation 
 
 Badi Rodriguez, future superstar game developer logging out!
 
-## New Feature: Unified Output to .txt File
+## New Feature: Unified Output to .txt File (07/11/2025 - 6:32 PM)
 
 A new visitor, `FileOutputVisitor`, has been added to the project! This visitor captures the output of both the `AreaVisitor` (area calculations) and the `XMLExportVisitor` (XML export of shapes) and writes them into a single `.txt` file in the main directory.
 
@@ -66,12 +66,11 @@ A new visitor, `FileOutputVisitor`, has been added to the project! This visitor 
 - The file is named after a parameter you provide (e.g., `shape_output.txt`).
 - The output file contains two sections: area calculations and XML export, making it easy to review or share results.
 
-### Why This Solves the Problem
 Previously, if you wanted to save the results of both visitors, you would have to manually copy console output or modify each visitor. Now, with `FileOutputVisitor`, you can:
 - Automatically generate a clean, organized `.txt` file with all relevant output.
 - Avoid modifying existing visitor logic or shape classes.
 - Easily change the output filename by passing a different parameter to the visitor.
 
-**This approach leverages the extensibility of the Visitor pattern, showing how new behaviors can be added without disrupting existing code!**
+I just thought it might be neat (also makes more sense because no one is checking consoles for outputs, duh... Specially a supposed .xml format file).
 
 ---
