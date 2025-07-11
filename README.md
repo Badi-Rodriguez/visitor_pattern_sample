@@ -13,7 +13,7 @@ The **key benefit** of the Visitor pattern is **extensibility**. In real-world s
 
 This is particularly useful in scenarios involving **polymorphism**, where different types of elements share a common interface. The Visitor pattern leverages **double dispatch**—a technique that determines the correct operation to perform based on both the visitor and the element types—ensuring that the right code runs for each combination.
 
-> For example, if you have a collection of different shapes (circles, rectangles, triangles), you can use the Visitor pattern to add new operations like exporting to XML or calculating area, without changing the shape classes themselves.
+> For example, if you have a collection of different shapes (circles, rectangles, triangles), you can use the Visitor pattern to add new operations like exporting to XML or calculating area, without changing the shape classes themselves. (You do however "add more code", but it's not in a way that disrupts current working implementations!)
 
 ## Why Use the Visitor Pattern?
 - **Separation of concerns:** Keeps data structures and operations separate.
@@ -50,4 +50,28 @@ This project is a clear, modern C++ example of the Visitor pattern, showing how 
 - Add new operations easily
 - Keep code organized and maintainable
 
-**Explore the `improved version` directory for the full, modular implementation!**
+For a complete analysis of the current code, feel free to go over to the `improved-version` directory! It contains all the classes and code used for the application.
+
+That would be it from me, thank you for reading, and I hope this implementation was useful for you to understand the perhaps most legedary design pattern in history! You won't get fired for using it, trust! Heheh!!! >:3
+
+Badi Rodriguez, future superstar game developer logging out!
+
+## New Feature: Unified Output to .txt File
+
+A new visitor, `FileOutputVisitor`, has been added to the project! This visitor captures the output of both the `AreaVisitor` (area calculations) and the `XMLExportVisitor` (XML export of shapes) and writes them into a single `.txt` file in the main directory.
+
+### How It Works
+- The `FileOutputVisitor` is used just like the other visitors: simply call `accept(fileVisitor)` on your shapes.
+- All output that would normally be printed to the console by the area and XML visitors is instead captured and written to a file.
+- The file is named after a parameter you provide (e.g., `shape_output.txt`).
+- The output file contains two sections: area calculations and XML export, making it easy to review or share results.
+
+### Why This Solves the Problem
+Previously, if you wanted to save the results of both visitors, you would have to manually copy console output or modify each visitor. Now, with `FileOutputVisitor`, you can:
+- Automatically generate a clean, organized `.txt` file with all relevant output.
+- Avoid modifying existing visitor logic or shape classes.
+- Easily change the output filename by passing a different parameter to the visitor.
+
+**This approach leverages the extensibility of the Visitor pattern, showing how new behaviors can be added without disrupting existing code!**
+
+---

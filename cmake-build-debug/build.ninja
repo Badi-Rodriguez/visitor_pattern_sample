@@ -73,6 +73,12 @@ build CMakeFiles/visitor_pattern_sample.dir/improved-version/CompoundShape.cpp.o
   OBJECT_DIR = CMakeFiles\visitor_pattern_sample.dir
   OBJECT_FILE_DIR = CMakeFiles\visitor_pattern_sample.dir\improved-version
 
+build CMakeFiles/visitor_pattern_sample.dir/improved-version/FileOutputVisitor.cpp.obj: CXX_COMPILER__visitor_pattern_sample_unscanned_Debug C$:/Users/Badir/Documents/projects/visitor_pattern_sample/improved-version/FileOutputVisitor.cpp || cmake_object_order_depends_target_visitor_pattern_sample
+  DEP_FILE = CMakeFiles\visitor_pattern_sample.dir\improved-version\FileOutputVisitor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\visitor_pattern_sample.dir
+  OBJECT_FILE_DIR = CMakeFiles\visitor_pattern_sample.dir\improved-version
+
 build CMakeFiles/visitor_pattern_sample.dir/improved-version/Rectangle.cpp.obj: CXX_COMPILER__visitor_pattern_sample_unscanned_Debug C$:/Users/Badir/Documents/projects/visitor_pattern_sample/improved-version/Rectangle.cpp || cmake_object_order_depends_target_visitor_pattern_sample
   DEP_FILE = CMakeFiles\visitor_pattern_sample.dir\improved-version\Rectangle.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -99,7 +105,7 @@ build CMakeFiles/visitor_pattern_sample.dir/improved-version/XMLExportVisitor.cp
 #############################################
 # Link the executable visitor_pattern_sample.exe
 
-build visitor_pattern_sample.exe: CXX_EXECUTABLE_LINKER__visitor_pattern_sample_Debug CMakeFiles/visitor_pattern_sample.dir/main.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/AreaVisitor.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/Circle.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/CompoundShape.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/Rectangle.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/Triangle.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/XMLExportVisitor.cpp.obj
+build visitor_pattern_sample.exe: CXX_EXECUTABLE_LINKER__visitor_pattern_sample_Debug CMakeFiles/visitor_pattern_sample.dir/main.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/AreaVisitor.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/Circle.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/CompoundShape.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/FileOutputVisitor.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/Rectangle.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/Triangle.cpp.obj CMakeFiles/visitor_pattern_sample.dir/improved-version/XMLExportVisitor.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\visitor_pattern_sample.dir

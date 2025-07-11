@@ -1,0 +1,63 @@
+=== AREA CALCULATIONS ===
+Circle Area: 78.5398
+Rectangle Area: 24
+Triangle Area: 6
+CompoundShape Area: (sum of contained shapes)
+Circle Area: 78.5398
+Rectangle Area: 24
+Triangle Area: 6
+Circle Area: 78.5398
+Rectangle Area: 24
+Triangle Area: 6
+
+=== XML EXPORT ===
+<Circle>
+  <Radius>5</Radius>
+</Circle>
+<Rectangle>
+  <Width>4</Width>
+  <Height>6</Height>
+</Rectangle>
+<Triangle>
+  <SideA>3</SideA>
+  <SideB>4</SideB>
+  <SideC>5</SideC>
+</Triangle>
+<CompoundShape>
+  <Circle>
+    <Radius>5</Radius>
+  </Circle>
+  <Rectangle>
+    <Width>4</Width>
+    <Height>6</Height>
+  </Rectangle>
+  <Triangle>
+    <SideA>3</SideA>
+    <SideB>4</SideB>
+    <SideC>5</SideC>
+  </Triangle>
+</CompoundShape>
+<Circle>
+  <Radius>5</Radius>
+</Circle>
+<Rectangle>
+  <Width>4</Width>
+  <Height>6</Height>
+</Rectangle>
+<Triangle>
+  <SideA>3</SideA>
+  <SideB>4</SideB>
+  <SideC>5</SideC>
+</Triangle>
+<Circle>
+  <Radius>5</Radius>
+</Circle>
+<Rectangle>
+  <Width>4</Width>
+  <Height>6</Height>
+</Rectangle>
+<Triangle>
+  <SideA>3</SideA>
+  <SideB>4</SideB>
+  <SideC>5</SideC>
+</Triangle>

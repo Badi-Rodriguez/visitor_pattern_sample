@@ -7,6 +7,7 @@ add_executable(visitor_pattern_sample main.cpp
         improved-version/AreaVisitor.cpp
         improved-version/Circle.cpp
         improved-version/CompoundShape.cpp
+        improved-version/FileOutputVisitor.cpp
         improved-version/Rectangle.cpp
         improved-version/Triangle.cpp
         improved-version/XMLExportVisitor.cpp

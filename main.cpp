@@ -9,6 +9,7 @@ std::string WORKING_DIRECTORY = "improved-version";
 #include "improved-version/CompoundShape.h"
 #include "improved-version/AreaVisitor.h"
 #include "improved-version/XMLExportVisitor.h"
+#include "improved-version/FileOutputVisitor.h"
 
 using namespace visitor_sample;
 
@@ -40,6 +41,15 @@ int main() {
         rectangle->accept(xmlVisitor);
         triangle->accept(xmlVisitor);
         compound->accept(xmlVisitor);
+
+        // File output visitor - creates a .txt file with all output
+        std::cout << "\nCreating output file..." << std::endl;
+        FileOutputVisitor fileVisitor("shape_output");
+        circle->accept(fileVisitor);
+        rectangle->accept(fileVisitor);
+        triangle->accept(fileVisitor);
+        compound->accept(fileVisitor);
+        fileVisitor.writeToFile();
 
     } catch (const std::invalid_argument& e) {
         std::cerr << "Error: " << e.what() << std::endl;
