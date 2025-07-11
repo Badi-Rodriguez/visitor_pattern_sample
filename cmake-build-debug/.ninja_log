@@ -1,0 +1,11 @@
+# ninja log v5
+35	1111	7738830143242497	CMakeFiles/visitor_pattern_sample.dir/improved-version/Rectangle.cpp.obj	63a083407e713c3b
+15	1119	7738830143242497	CMakeFiles/visitor_pattern_sample.dir/improved-version/Circle.cpp.obj	b4ce108d25a2f63a
+1119	1799	7738830150148086	CMakeFiles/visitor_pattern_sample.dir/improved-version/XMLExportVisitor.cpp.obj	6a8bdf8973045c9
+20	1243	7738830144560908	CMakeFiles/visitor_pattern_sample.dir/improved-version/CompoundShape.cpp.obj	9b45e9c014e4eb21
+28	1358	7738830145701162	CMakeFiles/visitor_pattern_sample.dir/improved-version/main.cpp.obj	de5426b21f7bf8d4
+11	1271	7738830144851531	CMakeFiles/visitor_pattern_sample.dir/improved-version/AreaVisitor.cpp.obj	57f496e3c893a412
+5	1438	7738830146519072	CMakeFiles/visitor_pattern_sample.dir/main.cpp.obj	f5f909aaf380da36
+1113	1720	7738830149352013	CMakeFiles/visitor_pattern_sample.dir/improved-version/Triangle.cpp.obj	d06fd9d98b5a958b
+5	286	7738830324203972	build.ninja	12b27dedada4516f
+7	189	7738830307451491	visitor_pattern_sample.exe	4692ac15369d8440
